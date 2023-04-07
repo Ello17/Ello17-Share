@@ -1,0 +1,132 @@
+
+.navabr{
+    background: black;
+    width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    animation: animate1 2s linear;
+    transition: .3s;
+    position: fixed;
+}
+nav{
+    display: flex;
+    justify-content: center;
+
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+li{
+    text-decoration: none;
+    display: flex;
+}
+li a{
+    text-decoration: solid;
+    color: white;
+    transition: .4s;
+}
+.bg{
+    display: flex;
+    justify-content: center;
+}
+@keyframes animate1 {
+    0%{
+        margin-top: -100px;
+        opacity: .1;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+a:hover{
+    color: darkgoldenrod;
+}
+@media screen and (max-width:900px) {
+    nav{
+        width: 300px;
+    }
+    ul{
+        gap: 1rem;
+        
+    }
+   li{
+   position: relative;
+   display: flex;
+   margin-left: -5px; 
+   }
+}
+.home{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    gap: 10px;
+
+}
+body .home{
+    background: #252525;
+}
+body .about{
+    background: red;
+}
+
+figure{
+    background: rgba(255, 255, 255, 0.646);
+    width:max-content;
+    border-radius: 5px;
+}
+figure img{
+    border-radius: 5px;
+    height: 350px;
+}
+.img-box{
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+figure a{
+    color: white;
+    text-decoration: solid;
+    border: #252525 solid 2px;
+    background: #252525;
+    border-radius: 5px;
+    height: max-content;
+    width: 100px;
+    text-align: center;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+figcaption{
+    text-align: center;
+}
+body{
+    filter: blur(100%);
+    background: #252525;
+}
+.footer-text h2{
+    text-align: center;
+    font-family: monospace;
+    color: white;
+}
+footer{
+    border: 2px solid black;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+    border-radius: 10px 5px;
+}
